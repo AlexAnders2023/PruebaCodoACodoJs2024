@@ -342,7 +342,7 @@ for (let i = 1; i <= numero; i++) {
 }
 
 alert(divisores.slice(0, -2));
-*/
+
 let numero = parseInt(prompt("Ingrese un número:"));
 
 let divisores = "Los divisores de " + numero + " son: ";
@@ -359,4 +359,186 @@ for (let i = 1; i <= numero; i++) {
 }
 
 alert(divisores);
+*/
 //16.    Escribir un programa que escriba en pantalla los divisores comunes de dos números dados 
+/*
+let numero1 = parseInt(prompt("Ingrese el primer número:"));
+let numero2 = parseInt(prompt("Ingrese el segundo número:"));
+
+let divisoresComunes = "Los divisores comunes de " + numero1 + " y " + numero2 + " son: ";
+let mayor = Math.max(numero1, numero2);
+
+for (let i = 1; i <= mayor; i++) {
+    if (numero1 % i === 0 && numero2 % i === 0) {
+        divisoresComunes += i + ", ";
+    }
+}
+
+alert(divisoresComunes.slice(0, -2));
+*/
+//17. Escribir un programa que nos diga si un número dado es primo (no es divisible por ninguno otro número que no sea él mismo o la unidad)
+/*
+let num = parseInt(prompt("Ingrese un número:"));
+let esPrimo = true;
+
+if (num <= 1) {
+    esPrimo = false;
+} else {
+    for (let i = 2; i <= Math.sqrt(num); i++) {
+        if (num % i === 0) {
+            esPrimo = false;
+            break;
+        }
+    }
+}2332
+
+if (esPrimo) {
+    alert(num + " es un número primo.");
+} else {
+    alert(num + " no es un número primo.");
+}
+*/
+//18. Pide la edad y si es mayor de 18 años indica que ya puede conducir
+/*
+let edad = parseInt(prompt("Ingrese su edad:"));
+
+if (edad >= 18) {
+    alert("¡Ya puedes conducir!");
+} else {
+    alert("Todavía no puedes conducir.");
+}
+*/
+/*19. Pide una nota (número). Muestra la calificación según la nota:
+● 0-3: Muy deficiente
+● 3-5: Insuficiente
+● 5-6: Suficiente
+● 6-7: Bien
+● 7-9: Notable
+● 9-10: Sobresaliente
+usando declaraciones if else
+*/
+/*
+let nota = parseFloat(prompt("Ingrese la nota:"));
+
+if (nota >= 0 && nota <= 3) {
+    alert("Calificación: Muy deficiente");
+} else if (nota > 3 && nota <= 5) {
+    alert("Calificación: Insuficiente");
+} else if (nota > 5 && nota <= 6) {
+    alert("Calificación: Suficiente");
+} else if (nota > 6 && nota <= 7) {
+    alert("Calificación: Bien");
+} else if (nota > 7 && nota <= 9) {
+    alert("Calificación: Notable");
+} else if (nota > 9 && nota <= 10) {
+    alert("Calificación: Sobresaliente");
+} else {
+    alert("Nota inválida. Por favor, ingrese una nota entre 0 y 10.");
+}               */
+/*------------------------------------------------------------------------------------------
+
+unsando una estrcuutura de contorl switch
+
+let nota = parseFloat(prompt("Ingrese la nota:"));
+
+let calificacion;
+
+switch (true) {
+    case (nota >= 0 && nota <= 3):
+        calificacion = "Muy deficiente";
+        break;
+    case (nota > 3 && nota <= 5):
+        calificacion = "Insuficiente";
+        break;
+    case (nota > 5 && nota <= 6):
+        calificacion = "Suficiente";
+        break;4
+    case (nota > 6 && nota <= 7):
+        calificacion = "Bien";
+        break;
+    case (nota > 7 && nota <= 9):
+        calificacion = "Notable";
+        break;
+    case (nota > 9 && nota <= 10):
+        calificacion = "Sobresaliente";
+        break;
+    default:
+        calificacion = "Nota inválida. Por favor, ingrese una nota entre 0 y 10.";
+}
+
+alert("Calificación: " + calificacion);  */
+
+/*20. Realiza un script que pida cadenas de texto hasta que se pulse “cancelar”. Al
+salir con “cancelar” deben mostrarse todas las cadenas concatenadas con un guión 
+
+let cadenas = [];
+
+while (true) {
+    let cadena = prompt("Ingrese una cadena de texto (o presione Cancelar para terminar):");
+    if (cadena === null) {
+        break;
+    }
+    cadenas.push(cadena);
+}
+
+if (cadenas.length > 0) {
+    let resultado = cadenas.join(" - ");
+    alert("Cadenas concatenadas: " + resultado);
+} else {
+    alert("No se ingresaron cadenas.");
+}  */
+
+/*21. Realiza un script que pida números hasta que se pulse “cancelar”. Si no es un
+número deberá indicarse con un «alert» y seguir pidiendo. Al salir con “cancelar”
+deberá indicarse la suma total de los números introducidos
+
+let numeros = [];
+let suma = 0;
+
+while (true) {
+    let input = prompt("Ingrese un número (o presione Cancelar para terminar):");
+    if (input === null) {
+        break;
+    }
+    let numero = parseFloat(input);
+    if (!isNaN(numero)) {
+        numeros.push(numero);
+        suma += numero;
+    } else {
+        alert("Por favor, ingrese un número válido.");
+    }
+}
+
+if (numeros.length > 0) {
+    alert("Suma total de los números introducidos: " + suma);
+} else {
+    alert("No se introdujeron números.");
+}  */
+/*23. Realiza un script que escriba una pirámide del 1 al 30 de la siguiente forma : 
+
+1
+22
+333
+4444
+55555
+666666
+……  
+
+for (let i = 1; i <= 30; i++) {  //solo muestra 30 numero x consola
+    let linea = "";
+    for (let j = 0; j < i; j++) {
+        linea += i;
+    }
+    console.log(linea);
+}  */
+
+let numero = parseInt(prompt("Ingrese un número:")); // solicta el tamaño de la piramide y lo muestra por consola
+
+for (let i = 1; i <= numero; i++) {
+    let linea = "";
+    for (let j = 0; j < i; j++) {
+        linea += i;
+    }
+    console.log(linea);
+    
+}
