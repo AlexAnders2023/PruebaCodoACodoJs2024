@@ -613,3 +613,144 @@ for (let i = 1; i <= 500; i++) {
 }  */
 /*------------Actividad Práctica Adicional - JavaScript Unidad 2-----
 --------------Tema: Funciones--------------------------------------*/
+/*1. Realizar una función, a la que se le pase como parámetro un número N,
+y muestre por consola N veces, el siguiente mensaje: “Bienvenidos al
+curso Full Stack”
+
+function mostrarMensaje(N) {
+    for (let i = 0; i < N; i++) {
+        console.log("Bienvenidos al curso Full Stack");
+    }
+}
+
+// Llamamos a la función con un valor de ejemplo, por ejemplo, 5
+mostrarMensaje(3);  */
+
+/*2. Diseñar una función que tenga como parámetros dos números, y que
+calcule el máximo.
+
+function calcularMaximo(numero1, numero2) {
+    return Math.max(numero1, numero2);
+}
+
+// Ejemplo de uso:
+let resultado = calcularMaximo(9, 5);
+console.log("El máximo es: " + resultado);  */
+
+/*3. Crear una función que se llame promedio3, que reciba como
+parámetro tres valores y devuelva el promedio de los mismos.
+
+function promedio3(valor1, valor2, valor3) {
+    return (valor1 + valor2 + valor3) / 3;
+}
+
+// Ejemplo de uso
+let promedio = promedio3(10, 15, 20);
+console.log("El promedio es: " + promedio);  */
+
+/*4. Crear una función que lea notas hasta que ingrese -1 y devuelve el
+promedio de las notas leídas. ( aunque no se suele leer valores en una
+función)Una función que se llame siguiente, que reciba como
+parámetro un valor entero, y devuelva el siguiente del número
+ingresado como parámetro.
+
+
+Para la primera función que calcula el promedio de notas ingresadas por el usuario 
+hasta que se ingresa -1, puedes hacer algo así:
+
+function calcularPromedioNotas() {
+    let suma = 0;
+    let cantidad = 0;
+    let nota = 0;
+
+    do {
+        nota = parseInt(prompt("Ingrese una nota (o -1 para terminar):"));
+        if (nota !== -1) {
+            suma += nota;
+            cantidad++;
+        }
+    } while (nota !== -1);
+
+    if (cantidad === 0) {
+        return "No se ingresaron notas.";
+    }
+
+    return suma / cantidad;
+}
+
+// Ejemplo de uso
+let promedio = calcularPromedioNotas();
+console.log("El promedio de las notas es: " + promedio);
+
+En este caso, la función siguiente toma un número como parámetro y devuelve ese número más uno. 
+Puedes llamar a esta función con cualquier número entero para obtener el siguiente número */
+
+//  <<<<< aqui comienzo para el ejercicio 7:
+/*
+function siguiente(numero) {
+    return numero + 1;
+}
+
+// Ejemplo de uso
+let siguienteNumero = siguiente(5);
+console.log("El siguiente número es: " + siguienteNumero);
+
+
+/*5. Una función que se llame doble, que reciba como parámetro un valor, y
+devuelva el doble del número ingresado como parámetro 
+
+function doble(numero) {
+    return numero * 2;
+}
+
+// Ejemplo de uso
+let resultado1 = doble(15);
+console.log("El doble es: " + resultado1); 
+*/
+/*6. Una función que se llame cuadrado, que reciba como parámetro un
+valor, y devuelva el valor del numero ingresado como parámetro
+elevado al cuadrado. 
+
+function cuadrado(numero) {
+    return numero * numero;
+}
+
+// Ejemplo de uso
+let resultado = cuadrado(25);
+console.log("El cuadrado es: " + resultado); 
+*/
+/* 7. Una función que se denomine imprimirValores que dado un número
+por parámetro, imprima cual es el valor siguiente, el doble y el
+cuadrado. Usando las funciones definidas en los puntos 5) , 6) y 7) :
+siguiente, el doble y el cuadrado.
+*/
+/*
+function imprimirValores(numero) {
+    let siguienteNumero = siguiente(numero);
+    let dobleNumero = doble(numero);
+    let cuadradoNumero = cuadrado(numero);
+
+    console.log("Número siguiente: " + siguienteNumero);
+    console.log("Doble del número: " + dobleNumero);
+    console.log("Cuadrado del número: " + cuadradoNumero);
+}
+
+// Ejemplo de uso
+imprimirValores(5);
+<<<< fin elercicio 7 */
+
+/*8. Una función que se denomine imprimirElDobleDelSiguiente que dado
+un número por parámetro, imprima cual es el valor siguiente al el doble.
+Usando las funciones definidas en los puntos 5) , 6) : siguiente, el
+doble.
+*/
+
+function imprimirElDobleDelSiguiente(numero) {
+    let siguienteNumero = siguiente(numero);
+    let dobleDelSiguiente = doble(siguienteNumero);
+
+    console.log("El doble del siguiente número es: " + dobleDelSiguiente);
+}
+
+// Ejemplo de uso
+imprimirElDobleDelSiguiente(5);
