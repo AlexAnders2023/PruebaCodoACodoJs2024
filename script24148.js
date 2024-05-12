@@ -65,7 +65,7 @@ if(casa.enAlquiler == false){
 //este meetodo conla funcion  anonima, llama a los datos de casa y direccion, se utiliza el if para veer si esta alquilda.
 // y muestra por fuera del metodo la direccion de la casa y el precio de la misma.
 
-let casa = new Object();
+//let casa = new Object();
 //propiedades
 
 /*casa.habitaciones = 3;
@@ -135,32 +135,36 @@ podemos modificar los parametros, como con JAVA*/
  es objeto que estoy usando en ese momento*/
 /*console.log(mascota1.raz);
 mascota2.caminar(); */
-/*----------------------------------------------------------------------------------------------------*/
-//1. Escribe un programa de una sola línea que haga que aparezca en la pantalla un alert que diga “Hello World”. 
+/*----Actividad Práctica Adicional - JavaScript Unidad 1----------------------------------------------------------*/
+
+/*1.Escribe un programa de una sola línea que haga que aparezca en la pantalla un alert que diga “Hello World”. 
 
 console.log("Hello world");
-//2.  Escribe un programa de una sola línea que escriba en la pantalla un texto que diga “Hello World” (document.write). 
+
+2.Escribe un programa de una sola línea que escriba en la pantalla un texto que diga “Hello World” (document.write). 
 
 document.write("Hello world <br>");
 
-//3.   Escribe un programa de una sola línea que escriba en la pantalla el resultado de sumar 3 + 5.
+3.Escribe un programa de una sola línea que escriba en la pantalla el resultado de sumar 3 + 5.
 
 console.log(3+5);
 
-//document.write(3+5);
-/*4. Escribe un programa de dos líneas que pida el nombre del usuario con un prompt y escriba un texto que diga “Hola nombreUsuario” 
+document.write(3+5);  */
+
+/*
+4.Escribe un programa de dos líneas que pida el nombre del usuario con un prompt y escriba un texto que diga “Hola nombreUsuario” 
 
 var nombreUsuario = prompt ("Ingrese su nombre:  ", "");   
 document.write( " <br> Hola " + nombreUsuario); */
 
-//5.  Escribe un programa de tres líneas que pida un número, pida otro número y escriba el resultado de sumar estos dos números. 
+//5.Escribe un programa de tres líneas que pida un número, pida otro número y escriba el resultado de sumar estos dos números. 
 /*
 var n1 = parseInt (prompt ("Ingrese el primer numero: "));
 var n2 = parseInt (prompt ("Ingrese el segundo numero: "));
 alert ("La suma es: " + (n1+n2));
 document.write ("<br> La Suma es: ", (n1+n2)); */
 
-//6. Escribe un programa que pida dos números y escriba en la pantalla cual es el mayor
+//6.Escribe un programa que pida dos números y escriba en la pantalla cual es el mayor
 /*
 var nu1 = parseInt (prompt ("Ingrese el primer numero: "));
 var nu2 = parseInt (prompt ("Ingrese el segundo numero: "));
@@ -172,7 +176,8 @@ alert ("El segundo numero es el mayor: "+ nu2);
     alert("Los numeros son iguales.")
 }
 */
-//7.  Escribe un programa que pida 3 números y escriba en la pantalla el mayor de los tres. 
+
+//7.Escribe un programa que pida 3 números y escriba en la pantalla el mayor de los tres. 
 /*
 var numero1 = parseInt(prompt("Ingrese el primer número:"));
 var numero2 = parseInt(prompt("Ingrese el segundo número:"));
@@ -190,7 +195,8 @@ if (numero3 > mayor) {
 
 alert("El mayor de los tres números es: " + mayor);
 */
-//8.    Escribe un programa que pida un número y diga si es divisible por 2 
+
+//8.Escribe un programa que pida un número y diga si es divisible por 2 
 /*
 let numero = parseInt(prompt("Ingrese un número:"));
 
@@ -200,7 +206,8 @@ if (numero % 2 === 0) {
     alert("El número no es divisible por 2.");
 }
 */
-//9.    Escribe un programa que pida una frase y escriba cuantas veces aparece la letra a.
+
+//9.Escribe un programa que pida una frase y escriba cuantas veces aparece la letra a.
 
 // let frase ingresa la frase y let contador se inicializa  en 0, con un for se recorre la frase y el let i acumula las "a" que va encontrando
 // con .toLowerCase la tarsfoma a minuscula si llegara a ingresar mayuscula y el operador === las compara con "a", y por ultimo se muestra el resultado con el "contador" por pantalla.
@@ -216,7 +223,8 @@ for (let i = 0; i < frase.length; i++) {
 
 alert("La letra 'a' aparece " + contador + " veces en la frase.");
 */
-//10.    Escribe un programa que pida una frase y escriba las vocales que aparecen 
+
+//10.Escribe un programa que pida una frase y escriba las vocales que aparecen 
 /*
 let frase = prompt("Ingrese una frase:"); //ingreso la frase por pantalla y la almacemos en la variable frase
 let vocales = ""; //variable que va almacenar la vocales 
@@ -233,7 +241,8 @@ for (let i = 0; i < frase.length; i++) { //con el for recorremos lo que devuelve
 alert("Las vocales que aparecen en la frase son: " + vocales); //finalmente despuesde recorrer la frase se muestran las vocales
 // solo permite mostrar una vez la vocal si esta repetida no se cuenta.
 */
-//11.    Escribe un programa que pida una frase y escriba cuántas de las letras que tiene son vocales 
+
+//11.Escribe un programa que pida una frase y escriba cuántas de las letras que tiene son vocales 
 /*
 let frase = prompt("Ingrese una frase:");
 let contadorVocales = 0;
@@ -247,7 +256,8 @@ for (let i = 0; i < frase.length; i++) {
 
 alert("La frase contiene " + contadorVocales + " letras que son vocales.");
 */
-//12.    Escribe un programa que pida una frase y escriba cuántas veces aparecen cada una de las vocales 
+
+//12.Escribe un programa que pida una frase y escriba cuántas veces aparecen cada una de las vocales 
 /*
 let frase = prompt("Ingrese una frase:");
 let contadorA = 0;
@@ -286,7 +296,8 @@ alert("La vocal 'a' aparece " + contadorA + " veces.\n" +
       "La vocal 'o' aparece " + contadorO + " veces.\n" +
       "La vocal 'u' aparece " + contadorU + " veces.");
      */ 
-//13.    Escribe un programa que pida un número y nos diga si es divisible por 2, 3, 5 o 7 (sólo hay que comprobar si lo es por uno de los cuatro) 
+
+//13.Escribe un programa que pida un número y nos diga si es divisible por 2, 3, 5 o 7 (sólo hay que comprobar si lo es por uno de los cuatro) 
 /*
 let numero = parseInt(prompt("Ingrese un número:"));
 
@@ -302,7 +313,8 @@ if (numero % 2 === 0) {
     alert("El número no es divisible por 2, 3, 5 ni 7.");
 }
 */
-//14.    Añadir al ejercicio anterior que nos diga por cual de los cuatro es divisible (hay que decir todos por los que es divisible) 
+
+//14.Añadir al ejercicio anterior que nos diga por cual de los cuatro es divisible (hay que decir todos por los que es divisible) 
 /*
 let numero = parseInt(prompt("Ingrese un número:"));
 let divisibles = "";
@@ -329,7 +341,8 @@ if (divisibles !== "") {
     alert("El número no es divisible por 2, 3, 5 ni 7.");
 }
 */
-//15.    Escribir un programa que escriba en pantalla los divisores de un número dado 
+
+//15.Escribir un programa que escriba en pantalla los divisores de un número dado 
 /*
 let numero = parseInt(prompt("Ingrese un número:"));
 
@@ -360,7 +373,8 @@ for (let i = 1; i <= numero; i++) {
 
 alert(divisores);
 */
-//16.    Escribir un programa que escriba en pantalla los divisores comunes de dos números dados 
+
+//16.Escribir un programa que escriba en pantalla los divisores comunes de dos números dados 
 /*
 let numero1 = parseInt(prompt("Ingrese el primer número:"));
 let numero2 = parseInt(prompt("Ingrese el segundo número:"));
@@ -376,6 +390,7 @@ for (let i = 1; i <= mayor; i++) {
 
 alert(divisoresComunes.slice(0, -2));
 */
+
 //17. Escribir un programa que nos diga si un número dado es primo (no es divisible por ninguno otro número que no sea él mismo o la unidad)
 /*
 let num = parseInt(prompt("Ingrese un número:"));
@@ -398,6 +413,7 @@ if (esPrimo) {
     alert(num + " no es un número primo.");
 }
 */
+
 //18. Pide la edad y si es mayor de 18 años indica que ya puede conducir
 /*
 let edad = parseInt(prompt("Ingrese su edad:"));
@@ -408,6 +424,7 @@ if (edad >= 18) {
     alert("Todavía no puedes conducir.");
 }
 */
+
 /*19. Pide una nota (número). Muestra la calificación según la nota:
 ● 0-3: Muy deficiente
 ● 3-5: Insuficiente
@@ -437,7 +454,7 @@ if (nota >= 0 && nota <= 3) {
 }               */
 /*------------------------------------------------------------------------------------------
 
-unsando una estrcuutura de contorl switch
+unsando una estructura de control switch:
 
 let nota = parseFloat(prompt("Ingrese la nota:"));
 
@@ -514,6 +531,7 @@ if (numeros.length > 0) {
 } else {
     alert("No se introdujeron números.");
 }  */
+
 /*23. Realiza un script que escriba una pirámide del 1 al 30 de la siguiente forma : 
 
 1
@@ -531,7 +549,7 @@ for (let i = 1; i <= 30; i++) {  //solo muestra 30 numero x consola
     }
     console.log(linea);
 }  */
-
+/*
 let numero = parseInt(prompt("Ingrese un número:")); // solicta el tamaño de la piramide y lo muestra por consola
 
 for (let i = 1; i <= numero; i++) {
@@ -541,4 +559,57 @@ for (let i = 1; i <= numero; i++) {
     }
     console.log(linea);
     
-}
+}  */
+
+/*24. Haz un script que escriba una pirámide inversa de los números del 1 al
+número que indique el usuario de la siguiente forma : (suponiendo que indica 6).
+666666
+55555
+4444
+333
+22
+1
+
+let numero = parseInt(prompt("Ingrese un número:"));
+
+for (let i = numero; i >= 1; i--) {
+    let linea = "";
+    for (let j = 0; j < i; j++) {
+        linea += i;
+    }
+    console.log(linea);
+}  */
+
+/*25. Un script que escriba los números del 1 al 500, que indique cuáles son
+múltiplos de 4 y de 9 y que cada 5 líneas muestre una línea horizontal. Por ejemplo :
+1
+2
+3
+4 (Múltiplo de 4)
+5
+————————————————————
+6
+7
+8 (Múltiplo de 4)
+9 (Múltiplo de 9)
+10   
+
+for (let i = 1; i <= 500; i++) {
+    let linea = i.toString();
+
+    if (i % 4 === 0) {
+        linea += " (Múltiplo de 4)";
+    }
+
+    if (i % 9 === 0) {
+        linea += " (Múltiplo de 9)";
+    }
+
+    console.log(linea);
+
+    if (i % 5 === 0) {
+        console.log("————————————————————");
+    }
+}  */
+/*------------Actividad Práctica Adicional - JavaScript Unidad 2-----
+--------------Tema: Funciones--------------------------------------*/
