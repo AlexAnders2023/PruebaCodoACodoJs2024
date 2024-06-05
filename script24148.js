@@ -295,7 +295,7 @@ alert("La vocal 'a' aparece " + contadorA + " veces.\n" +
       "La vocal 'i' aparece " + contadorI + " veces.\n" +
       "La vocal 'o' aparece " + contadorO + " veces.\n" +
       "La vocal 'u' aparece " + contadorU + " veces.");
-     */ 
+     */
 
 //13.Escribe un programa que pida un número y nos diga si es divisible por 2, 3, 5 o 7 (sólo hay que comprobar si lo es por uno de los cuatro) 
 /*
@@ -315,8 +315,8 @@ if (numero % 2 === 0) {
 */
 
 //14.Añadir al ejercicio anterior que nos diga por cual de los cuatro es divisible (hay que decir todos por los que es divisible) 
-/*
-let numero = parseInt(prompt("Ingrese un número:"));
+
+/*let numero = parseInt(prompt("Ingrese un número:"));
 let divisibles = "";
 
 if (numero % 2 === 0) {
@@ -339,8 +339,8 @@ if (divisibles !== "") {
     alert("El número es divisible por: " + divisibles.slice(0, -2) + ".");
 } else {
     alert("El número no es divisible por 2, 3, 5 ni 7.");
-}
-*/
+}*/
+
 
 //15.Escribir un programa que escriba en pantalla los divisores de un número dado 
 /*
@@ -743,7 +743,7 @@ imprimirValores(5);
 un número por parámetro, imprima cual es el valor siguiente al el doble.
 Usando las funciones definidas en los puntos 5) , 6) : siguiente, el
 doble.
-*/
+
 
 function imprimirElDobleDelSiguiente(numero) {
     let siguienteNumero = siguiente(numero);
@@ -752,5 +752,6 @@ function imprimirElDobleDelSiguiente(numero) {
     console.log("El doble del siguiente número es: " + dobleDelSiguiente);
 }
 
-// Ejemplo de uso
-imprimirElDobleDelSiguiente(5);
+//Ejemplo de uso
+imprimirElDobleDelSiguiente(5)*/
+
