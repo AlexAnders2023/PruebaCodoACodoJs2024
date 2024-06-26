@@ -168,13 +168,16 @@ else:
 
 #9) Añadir al ejercicio anterior que nos diga por cuál de los cuatro es divisible (hay que decir todos por los que es divisible)
 
-num= int(input("Ingrese un numero para verficar si es divisible por 2,3,5 o 7: "))
-divisible = ""
+'''num= int(input("Ingrese un numero para verficar si es divisible por 2,3,5 o 7: "))
+divisible = '''
 
-if num % 2 == 0:
+'''if num % 2 == 0:
     divisible += "2, " #arrreglar esta parte que no se entiende???
 
 if divisible != (""):
     print("El número es divisible por: " + divisible [0, -2] + ".")
 else:
     print("El número no es divisible por 2, 3, 5 ni 7.")
+'''
+'''for i in range(20,0,-1):
+    print (i)'''
