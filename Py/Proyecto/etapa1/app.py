@@ -5,24 +5,24 @@ def agregar_producto(codigo, descripcion, cantidad, precio, imagen, proveedor):
     if consultar_producto(codigo):
         return False
 
-nuevo_producto = {
-    'codigo':codigo,
-    'descripcion': descripcion,
-    'cantidad': cantidad,
-    'precio': precio,
-    'imagen': imagen,
-    'proveedor': proveedor
-}
-productos.append(nuevo_producto)
-return True
+    nuevo_producto = {
+        'codigo': 'codigo',
+        'descripcion': 'descripcion',
+        'cantidad': 'cantidad',
+        'precio': 'precio',
+        'imagen': 'imagen',
+        'proveedor': 'proveedor'
+    }
+    productos.append(nuevo_producto)
+    return True
 
 def consultar_producto(codigo):
     for producto in productos:
         if producto['codigo'] == codigo:
             return producto
-        return False
+    return False
     
-def modificar_producto(codigo, nueva_descripcion, nueva_cantidad, nuevo_precio, nueva_imagen, nuevo_proveedor)
+def modificar_producto(codigo, nueva_descripcion, nueva_cantidad, nuevo_precio, nueva_imagen, nuevo_proveedor):
     for producto in productos:
         if producto['codigo'] == codigo:
            producto['descripcion'] == nueva_descripcion
@@ -31,7 +31,7 @@ def modificar_producto(codigo, nueva_descripcion, nueva_cantidad, nuevo_precio, 
            producto['imagen'] == nueva_imagen
            producto['proveedor'] == nuevo_proveedor
            return True
-return False
+    return False
 
 def listar_productos():
     print("-"*50)
@@ -49,7 +49,7 @@ def eliminar_producto(codigo):
         if producto['codigo'] == codigo:
             productos.remove(producto)
             return True
-return False
+    return False
 
 #agregar productos a la lista:
 
@@ -60,15 +60,16 @@ agregar_producto(4,'Monitor LCD 27 pulgadas',25 ,78500 ,'monitor.jpg', 104)
 agregar_producto(5, 'Pad mouse', 5, 500, 'padmouse.jpg', 105 )
 agregar_producto(3,'Parlantes USB', 4, 2500, 'parlantes.jpg', 105) #no es posible agregarlo, mismo codigo que producto 3.
 
-#Listamos los productos en ppantalla 
+
+#Listamos los productos en pantalla 
 
 listar_productos()
 
-#cconsultar un produucto en pantalla
+#consultar un produucto en pantalla
 cod_prod = int(input("Ingrese el codigo de un producto: "))
 producto = consultar_producto(cod_prod)
 if producto:
-    print(f"Producto encontrado:{producto['codigo']} - {producto['descripcion']}")
+    print(f"Producto encontrado: {producto['codigo']} - {producto['descripcion']}")
 else:
     print(f'Producto {cod_prod} no encontrado.')
 
@@ -86,24 +87,7 @@ eliminar_producto(5)
 
 listar_productos()
 
-class Catalogo:
-    productos = []
 
-def agregar_producto(self, codigo, descripcion, cantidad, precio, imagen, proveedor):
-
-    if self.consultar_producto(codigo):
-        return False
-
-nuevo_producto = {
-    'codigo':codigo,
-    'descripcion': descripcion,
-    'cantidad': cantidad,
-    'precio': precio,
-    'imagen': imagen,
-    'proveedor': proveedor,
-}
-self.productos.append(nuevo_producto)
-return True
 
 
             
